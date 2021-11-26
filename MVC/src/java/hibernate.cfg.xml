@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost/idw?useSSL=false</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">adenserver</property>
+        <property name ="current_session_context_class">thread</property>
+        <property name ="hibernate.hbm2ddl.auto">create</property>
+        <mapping class="usuario.Usuario"/>    
+    </session-factory> 
+</hibernate-configuration>    
+
